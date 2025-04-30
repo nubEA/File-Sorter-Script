@@ -9,6 +9,9 @@ download_dir="$HOME/Downloads"
 
 for file in "$download_dir"/*; do
     if [[ -f $file ]]; then
+        #To ensure the download happens successfully
+        sleep 3
+        
         name="${file##*/}"          #only the file name with extension
         extension="${name##*.}"     #only the extension from the file name
         extension="${extension,,}"
