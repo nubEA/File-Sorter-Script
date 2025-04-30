@@ -44,5 +44,5 @@ incrontab -e
 ```
 Add this line (replace /absolute/path/to/ if needed):
 ```
-/home/YOUR_USERNAME/Downloads IN_CREATE,IN_CLOSE_WRITE,IN_MOVED_TO /absolute/path/to/sort_download.sh %w%f
+/home/YOUR_USERNAME/Downloads IN_CLOSE_WRITE /absolute/path/to/sort_download.sh %w%f
 ```
